@@ -11,7 +11,7 @@ import HomePage from './pages/HomePage';
 import Navbar from './components/NavBar';
 import ExportEmployeeList from './pages/ExportEmployeeList';
 import CreateDepartment from './pages/CreateDepartment';
-import Dashboard from './pages/Dashboard';
+
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('jwt') || '');
