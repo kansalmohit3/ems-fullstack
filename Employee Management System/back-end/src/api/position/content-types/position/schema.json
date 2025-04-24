@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "positions",
+  "info": {
+    "singularName": "position",
+    "pluralName": "positions",
+    "displayName": "POSITION"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "salary_range": {
+      "type": "biginteger"
+    }
+  }
+}

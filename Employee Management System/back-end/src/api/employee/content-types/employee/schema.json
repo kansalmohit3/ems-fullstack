@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "singularName": "employee",
+    "pluralName": "employees",
+    "displayName": "EMPLOYEE",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "hireDate": {
+      "type": "date"
+    },
+    "department": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::department.department"
+    },
+    "isStatus": {
+      "type": "boolean",
+      "required": false
+    },
+    "profilePicture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
