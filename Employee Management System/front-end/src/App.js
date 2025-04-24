@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './pages/Login';
 import EmployeeProfile from './pages/EmployeeProfile';
 import DepartmentPage from './pages/DepartmentPage';
-// import Dashboard from './pages/Dashboard';
 import EmployeeTable from './pages/EmployeeTable';
 import CreateEmployeeForm from './pages/CreateEmployeeForm';
 import EditEmployee from './pages/EditEmployee';
@@ -46,7 +45,6 @@ function App() {
               <Route path="/edit-employee/:id" element={<EditEmployee />} />
               <Route path="/edit-department/:id" element={<EditDepartment />} />
               <Route path="/create-department/" element={<CreateDepartment />} />
-              {/* <Route path="/dashboard" element={<Dashboard />} /> */}
               <Route path="/" element={<HomePage />} />
             </>
           )}
