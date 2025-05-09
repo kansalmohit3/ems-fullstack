@@ -432,8 +432,10 @@ export interface ApiEmployeeEmployee extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     phone: Schema.Attribute.BigInteger;
+    position: Schema.Attribute.Relation<'oneToOne', 'api::position.position'>;
     profilePicture: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
+      'images' | 'files' | 'videos' | 'audios',
+      true
     >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;

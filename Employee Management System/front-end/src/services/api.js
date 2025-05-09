@@ -58,8 +58,8 @@ export const updateEmployee = (id, data) =>
 export const fetchDepartments = () =>
   API.get('/departments');
 
-// export const createDepartment = (data) =>
-//   API.post('/departments', { data });
+export const createDepartment = (data) =>
+  API.post('/departments', { data });
 
 export const updateDepartment = (id, data) =>
   API.put(`/departments/${id}`, { data });

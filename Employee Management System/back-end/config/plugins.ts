@@ -3,7 +3,7 @@ export default {
     'users-permissions': {
       config: {
         register: {
-          enabled: true, // 💥 THIS is what allows the /auth/local/register endpoint
+          enabled: true, 
         },
       },
     },
